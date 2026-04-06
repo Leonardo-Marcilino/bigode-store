@@ -1,0 +1,556 @@
+body {
+    height: 100vh;
+}
+
+.backgroundHero {
+    height: 100vh;
+    background-image: url(../img/herobackground.svg);
+    background-repeat: no-repeat;
+
+    background-size: cover;
+}
+
+& .boxBtn {
+    display: flex;
+    gap: 16px;
+}
+
+& .btn {
+    padding: 10px 25px;
+    border-radius: 8px;
+    color: rgba(255, 255, 255, 1);
+    cursor: pointer;
+
+}
+
+& .btnEscuro {
+    background-color: rgba(59, 68, 246, 1);
+}
+
+& .btnClaro {
+    border: 1px solid rgba(255, 255, 255, 1);
+}
+
+& .corAzul {
+    color: rgba(59, 68, 246, 1);
+}
+
+& .logo {
+    & a {
+        font-size: 28px;
+        font-weight: bold;
+        color: rgba(255, 255, 255, 1);
+
+
+    }
+}
+
+.navBar {
+    padding: 16px 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & .navList {
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        gap: 40px;
+
+        & .navItem {
+            font-size: 18px;
+            color: rgba(239, 239, 239, 0.7);
+            font-weight: 400;
+        }
+
+        & .selecionado {
+            color: rgba(255, 255, 255, 1);
+        }
+
+    }
+
+}
+
+.hero {
+    padding: 114px 90px;
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    color: rgba(255, 255, 255, 1);
+
+    & .info {
+        display: flex;
+        flex-direction: column;
+        gap: 26px;
+
+        & .title {
+            font-size: 48px;
+            font-weight: 600;
+        }
+
+        & .description {
+            font-size: 24px;
+            font-weight: 500;
+        }
+    }
+
+    & .btn {
+        width: 162px;
+        padding: 16px 32px;
+        text-align: center;
+    }
+}
+
+.whyUs {
+    margin: 0 90px;
+    padding: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+
+    & .boxTitleSection {
+        width: 473px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 16px;
+        text-align: center;
+
+        & .subTitle {
+            font-size: 36px;
+            font-weight: 600;
+        }
+
+        & .descriptionTitle {
+            font-size: 18px;
+            color: rgba(50, 50, 50, 1);
+        }
+    }
+
+
+    & .containerWhyUs {
+        display: flex;
+        gap: 83px;
+
+        & .cardWhyUs {
+            width: 250px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 21px;
+
+            & img {
+                width: 94px;
+            }
+
+            & .cardDescription {
+                font-size: 20px;
+                color: rgba(24, 24, 24, 1);
+                text-align: center;
+            }
+        }
+    }
+
+}
+
+.gameSection {
+    margin: 0 90px;
+    padding: 45px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    & .boxTitleGames {
+        display: flex;
+        justify-content: space-between;
+
+        & .titleGames {
+            font-size: 36px;
+            font-weight: 600;
+        }
+
+        & a {
+            font-size: 18px;
+            font-weight: 600;
+
+        }
+    }
+
+    & .containerGames {
+        display: flex;
+        justify-content: space-between;
+        gap: 24px 16px;
+        flex-wrap: wrap;
+
+        & .cardGame {
+            width: 169px;
+            height: 169px;
+            background-image: url(../img/game1.png);
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            border-radius: 8px;
+
+            & p {
+                color: rgba(245, 244, 249, 1);
+            }
+        }
+
+        & .gameCardShop {
+            width: 262px;
+            height: 340px;
+            padding: 16px;
+            background-color: rgba(255, 255, 255, 1);
+            box-shadow: 0px 8px 10px 0px rgba(164, 164, 164, 0.09);
+            border-radius: 8px;
+
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+
+            & img {
+                width: 230px;
+                height: 220px;
+            }
+
+            & .infoGame {
+                display: flex;
+                flex-direction: column;
+                gap: 17px;
+
+                & .nameGame {
+                    font-size: 20px;
+                    font-weight: 500;
+                    color: rgba(24, 24, 24, 1);
+                }
+
+                & .infoPrice {
+                    display: flex;
+                    justify-content: space-between;
+
+                    & .freeDownload {
+                        color: rgba(59, 68, 246, 1);
+                        font-weight: 500;
+                        padding: 4px 10px;
+                        background: rgba(216, 218, 253, 1);
+                        border-radius: 4px;
+                    }
+
+                    & .pricePoint {
+                        color: rgba(59, 68, 246, 1);
+                        font-weight: 500;
+                    }
+
+                    & .priceBox {
+                        display: flex;
+                        background-color: rgba(240, 240, 240, 1);
+                        gap: 6px;
+                        padding-right: 10px;
+                        border-radius: 4px;
+
+                        & .promo {
+                            padding: 3px;
+                            color: rgba(252, 50, 111, 1);
+                            background-color: rgba(252, 50, 111, 0.2);
+                            font-size: 12px;
+                            font-weight: 500;
+                            border-radius: 4px 0px 0px 4px;
+                        }
+
+                        & .price {
+                            padding: 3px;
+                            color: rgba(125, 125, 125, 1);
+                            font-size: 14px;
+                            font-weight: 500;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+.containerComingSoon {
+    padding: 50px 90px;
+    background-color: rgba(14, 14, 14, 1);
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    & .boxTitleGames {
+        display: flex;
+        justify-content: space-between;
+
+        & .titleGames {
+            font-size: 36px;
+            font-weight: 600;
+            color: rgba(245, 244, 249, 1);
+        }
+    }
+
+    & .containerComingSoonGames {
+        display: flex;
+        gap: 16px;
+
+        & .subcontainerComingSoonGames1 {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+
+            & .game1 {
+                background-image: url(../img/callofduty.png);
+                height: 400px;
+                width: 633px;
+            }
+
+            & .game2 {
+                background-image: url(../img/callofduty.png);
+                height: 400px;
+                width: 633px;
+            }
+        }
+
+        & .subcontainerComingSoonGames2 {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+
+            & .game3 {
+                background-image: url(../img/callofduty.png);
+                height: 261px;
+                width: 447px;
+            }
+
+            & .game4 {
+                background-image: url(../img/callofduty.png);
+                height: 261px;
+                width: 447px;
+            }
+
+            & .game5 {
+                background-image: url(../img/callofduty.png);
+                height: 261px;
+                width: 447px;
+            }
+        }
+
+        & .cardComingSoonGame {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 50px;
+            gap: 32px;
+            border-radius: 8px;
+
+            & .nameComingSoonGame {
+                width: 342px;
+                font-size: 28px;
+                font-weight: 500;
+                box-shadow: 0 4px 5 0 rgba(0, 0, 0, 1);
+                color: rgba(255, 255, 255, 1);
+            }
+
+            & .preOrderComingSoonGame {
+                width: 144px;
+                height: 40px;
+                padding: 9px 16px;
+                border: 1px solid rgba(245, 244, 249, 1);
+                border-radius: 8px;
+                font-size: 14px;
+                font-weight: 600;
+                text-align: center;
+                color: rgba(255, 255, 255, 1);
+            }
+        }
+    }
+
+}
+
+.feedbackContainer {
+    margin: 0 90px;
+    padding: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+
+    & .boxTitleSection {
+        width: 473px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 16px;
+        text-align: center;
+
+        & .subTitle {
+            font-size: 36px;
+            font-weight: 600;
+        }
+
+        & .descriptionTitle {
+            font-size: 18px;
+            color: rgba(50, 50, 50, 1);
+        }
+    }
+
+    & .boxFeedbacks {
+        width: auto;
+        display: flex;
+        align-items: center;
+        gap: 27px;
+        flex-wrap: wrap;
+
+        & .cardFeedbackClient {
+            width: 297px;
+            height: 296px;
+            border-radius: 6px;
+
+            padding: 32px 24px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 24px;
+
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 8px 10px 0px;
+
+            & .imgCliente {
+                width: 90px;
+                height: 90px;
+            }
+
+            & .info {
+                display: flex;
+                flex-direction: column;
+                gap: 6px;
+                align-items: center;
+
+                & .nomeCliente {
+                    font-size: 20px;
+                    font-weight: 500;
+                }
+
+                & .feedbackText {
+                    font-size: 14px;
+                    font-weight: 400;
+                    text-align: center;
+                    width: 249px;
+                }
+            }
+
+        }
+
+        & .bigCardFeedbackClient {
+            width: 338px;
+            height: 333px;
+            border-radius: 6px;
+
+            padding: 32px 24px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 24px;
+
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 8px 10px 0px;
+
+            & .imgCliente {
+                width: 110px;
+                height: 110px;
+            }
+
+            & .info {
+                display: flex;
+                flex-direction: column;
+                gap: 6px;
+                align-items: center;
+
+                & .nomeCliente {
+                    font-size: 24px;
+                    font-weight: 500;
+                }
+
+                & .feedbackText {
+                    font-size: 15px;
+                    font-weight: 400;
+                    text-align: center;
+                    width: 249px;
+                }
+            }
+
+        }
+    }
+}
+
+.footerContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 65px;
+    background-color: rgba(14, 14, 14, 1);
+
+    & .footerNavContainer {
+        margin: 0 90px;
+        padding: 70px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 192px;
+
+        & .navBarFooter {
+            display: flex;
+            align-items: flex-start;
+            gap: 125px;
+
+            & .menuNav {
+                display: flex;
+                flex-direction: column;
+                gap: 24px;
+            }
+
+            & .menuNavTitulo {
+                font-size: 18px;
+                font-weight: 600;
+                color: rgba(245, 244, 249, 1);
+            }
+
+            & .menuNavItens {
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+
+                & a{
+                    font-size: 16px;
+                    font-weight: 400;
+                    color: rgba(160, 160, 160, 1);
+                }
+            }
+
+            & .menuNavSocialMedia{
+                display: flex;
+                gap: 12px;
+                align-items: center;
+            }
+        }
+
+    }
+
+    & .copy {
+        width: 1096px;
+        padding: 23px;
+        border-top: 1px solid rgba(255, 255, 255, 0.04);
+        
+        text-align: center;
+        color: rgba(160, 160, 160, 1);
+        font-weight: 400;
+        font-size: 15px;
+    }
+}
